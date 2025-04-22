@@ -1,0 +1,145 @@
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #fff0f6;
+    color: #4b145b;
+    margin: 0;
+    padding: 0;
+  }
+  
+  header {
+    background-color: #ffe0f0;
+    text-align: center;
+    padding: 2rem 1rem;
+    border-bottom: 2px solid #f7aef8;
+  }
+  
+  h1 {
+    font-size: 2rem;
+    margin: 0;
+  }
+  
+  .subtitle {
+    font-style: italic;
+    color: #c9184a;
+  }
+  
+  main {
+    padding: 1rem;
+  }
+  
+  section h2 {
+    color: #a4133c;
+    margin-top: 1.5rem;
+  }
+  
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 1rem;
+    background: #fff;
+    box-shadow: 0 0 10px rgba(255, 173, 221, 0.3);
+  }
+  
+  th, td {
+    border: 1px solid #f7aef8;
+    padding: 10px;
+    text-align: center;
+  }
+  
+  button {
+    padding: 6px 12px;
+    background-color: #f72585;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #c9184a;
+  }
+  
+  .note {
+    font-size: 0.9rem;
+    color: #6a0572;
+    margin-top: 0.5rem;
+  }
+  
+  footer {
+    background-color: #ffe0f0;
+    text-align: center;
+    padding: 1rem;
+    margin-top: 2rem;
+    font-size: 0.85rem;
+  }
+  
+  /* Form section */
+  .form-section {
+    margin-top: 2rem;
+    padding: 1rem;
+    background-color: #fff7fb;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(255, 173, 221, 0.3);
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  input {
+    padding: 10px;
+    border: 1px solid #f7aef8;
+    border-radius: 5px;
+    font-size: 1rem;
+  }
+  
+  form button {
+    background-color: #f72585;
+    color: white;
+    font-weight: bold;
+    font-size: 1rem;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  form button:hover {
+    background-color: #c9184a;
+  }
+  
+  /* Mobile Responsive */
+  @media (max-width: 600px) {
+    table, thead, tbody, th, td, tr {
+      display: block;
+      width: 100%;
+    }
+  
+    tr {
+      margin-bottom: 1rem;
+      box-shadow: 0 0 8px rgba(255, 173, 221, 0.2);
+      padding: 0.5rem;
+      background-color: #fff;
+    }
+  
+    th {
+      display: none;
+    }
+  
+    td {
+      text-align: right;
+      padding-left: 50%;
+      position: relative;
+    }
+  
+    td::before {
+      content: attr(data-label);
+      position: absolute;
+      left: 1rem;
+      text-align: left;
+      font-weight: bold;
+    }
+  }
+  
+  

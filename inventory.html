@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Inventory & Profit - Flora Finance</title>
+  <link rel="stylesheet" href="styles/inventory.css" />
+</head>
+<body>
+  <header>
+    <h1>🌼 Inventory & Profit Calculator</h1>
+    <p class="subtitle">Track items, manage costs, and shine like the pro you are!</p>
+  </header>
+
+  <main>
+    <section class="info">
+      <h2>Inventory & Profit Explained</h2>
+      <p>
+        Keeping track of the items used for each event is key to saving money and maximizing profits.
+        This page helps you manage inventory and understand how much you're earning vs. spending!
+      </p>
+    </section>
+
+    <section class="inventory-form">
+      <h2>Add Inventory Item</h2>
+      <form id="inventoryForm">
+        <input type="text" id="itemName" placeholder="Item Name" required />
+        <input type="number" id="itemQty" placeholder="Quantity" required />
+        <input type="number" id="itemCost" placeholder="Cost per Item (R)" required />
+        <input type="number" id="expectedRevenue" placeholder="Expected Revenue (R)" required />
+        <button type="submit">Add Item</button>
+      </form>
+    </section>
+
+    <section class="inventory-table">
+      <h2>Current Inventory</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Item</th>
+            <th>Qty</th>
+            <th>Cost (R)</th>
+            <th>Revenue (R)</th>
+            <th>Profit (R)</th>
+          </tr>
+        </thead>
+        <tbody id="inventoryTableBody">
+          <!-- Items will appear here -->
+        </tbody>
+      </table>
+      <div class="summary">
+        <p><strong>Total Profit:</strong> R<span id="totalProfit">0.00</span></p>
+        <button onclick="downloadInventory()">📥 Download Summary</button>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Flora Finance 🌷 Created for Poppie </p>
+  </footer>
+
+  <script src="scripts/inventory.js"></script>
+</body>
+</html>

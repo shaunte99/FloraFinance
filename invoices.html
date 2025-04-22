@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Invoices & Receipts - Flora Finance</title>
+  <link rel="stylesheet" href="styles/invoices.css" />
+</head>
+<body>
+  <header>
+    <h1>🧾 Invoices & Receipts</h1>
+    <p class="subtitle">Get paid, track payments, and stay professional!</p>
+  </header>
+
+  <main>
+    <section class="info">
+      <h2>Why Invoices & Receipts Matter</h2>
+      <p>
+        An <strong>invoice</strong> is a formal request for payment sent to a client or vendor, and a <strong>receipt</strong> is proof that payment has been received.
+        Keeping these organized helps maintain cash flow, avoids payment disputes, and builds professionalism.
+        For wedding decorators, every floral arch and table setup deserves proper billing!
+      </p>
+    </section>
+
+    <section class="invoice-generator">
+      <h2>Create a New Invoice</h2>
+      <form id="invoice-form">
+        <label>Client/Vendor Name:
+          <input type="text" id="clientName" required />
+        </label>
+        <label>Service Provided:
+          <input type="text" id="service" required />
+        </label>
+        <label>Amount (ZAR):
+          <input type="number" id="amount" required />
+        </label>
+        <label>Date:
+          <input type="date" id="invoiceDate" required />
+        </label>
+        <label>Invoice Number:
+          <input type="text" id="invoiceNumber" placeholder="e.g. INV001" required />
+        </label>
+        <button type="button" onclick="generateInvoice()">Generate Invoice</button>
+      </form>
+    </section>
+
+    <section class="invoice-preview">
+      <h2>Invoice Preview</h2>
+      <div id="invoice-output" class="invoice-box">
+        <!-- Generated invoice will appear here -->
+      </div>
+      <button id="print-btn" onclick="printInvoice()">🖨️ Print</button>
+      <button id="download-btn" onclick="downloadInvoice()">⬇️ Download</button>
+    </section>
+
+    <section class="examples">
+      <h2>Example Invoice Format</h2>
+      <pre>
+Invoice Number: INV001
+Client: Blissful Brides
+Service: Wedding Table Decor
+Amount: R7,200
+Date: 2025-04-25
+
+Thank you for choosing Flora Finance! 🌸
+      </pre>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Flora Finance 🌷 Made for Poppie Smit</p>
+  </footer>
+
+  <script src="scripts/invoices.js"></script>
+</body>
+</html>

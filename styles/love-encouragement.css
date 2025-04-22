@@ -1,0 +1,100 @@
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #fff0f6;
+    margin: 0;
+    padding: 0;
+    color: #5a005a;
+  }
+  
+  header {
+    background: #ffe0f0;
+    padding: 2rem 1rem;
+    text-align: center;
+    border-bottom: 2px solid #ffc8dd;
+  }
+  
+  h1 {
+    margin: 0;
+    font-size: 2rem;
+  }
+  
+  .subtitle {
+    font-style: italic;
+    color: #c9184a;
+  }
+  
+  main {
+    padding: 1.5rem;
+  }
+  
+  .affirmations ul {
+    list-style: none;
+    padding-left: 0;
+  }
+  
+  .affirmations li {
+    margin-bottom: 10px;
+    font-weight: 500;
+    font-size: 1.1rem;
+  }
+  
+  .quiz-section {
+    margin-top: 2rem;
+  }
+  
+  .question {
+    margin-bottom: 1.5rem;
+  }
+  
+  .question p {
+    font-weight: bold;
+  }
+  
+  label {
+    display: block;
+    margin: 5px 0;
+  }
+  
+  button {
+    padding: 10px 20px;
+    background-color: #f72585;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+  }
+  
+  button:hover {
+    background-color: #c9184a;
+  }
+  
+  #quiz-result {
+    margin-top: 1rem;
+    font-weight: bold;
+    color: #5a189a;
+  }
+  
+  footer {
+    background-color: #ffe0f0;
+    text-align: center;
+    padding: 1rem;
+    font-size: 0.9rem;
+    margin-top: 2rem;
+  }
+  
+  /* Responsive */
+  @media (max-width: 600px) {
+    main {
+      padding: 1rem;
+    }
+  
+    h1 {
+      font-size: 1.6rem;
+    }
+  
+    .question p, label {
+      font-size: 0.95rem;
+    }
+  }
+  

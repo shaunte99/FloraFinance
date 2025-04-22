@@ -1,0 +1,97 @@
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #fff0f6;
+    color: #4b145b;
+    margin: 0;
+    padding: 0;
+  }
+  
+  header {
+    background-color: #ffe0f0;
+    text-align: center;
+    padding: 2rem 1rem;
+    border-bottom: 2px solid #f7aef8;
+  }
+  
+  h1 {
+    font-size: 2.2rem;
+    margin: 0;
+  }
+  
+  .subtitle {
+    font-style: italic;
+    color: #c9184a;
+  }
+  
+  main {
+    padding: 1rem;
+  }
+  
+  section {
+    margin-bottom: 2rem;
+  }
+  
+  h2 {
+    color: #a4133c;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 1rem;
+    font-weight: bold;
+  }
+  
+  input {
+    width: 100%;
+    padding: 0.6rem;
+    border-radius: 6px;
+    border: 1px solid #ddd;
+    margin-top: 0.4rem;
+  }
+  
+  button {
+    background-color: #f72585;
+    color: white;
+    border: none;
+    padding: 10px 16px;
+    margin-top: 10px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  button:hover {
+    background-color: #c9184a;
+  }
+  
+  .invoice-box {
+    background-color: #fff;
+    padding: 1rem;
+    border: 1px solid #f7aef8;
+    box-shadow: 0 0 10px rgba(255, 173, 221, 0.2);
+    margin-top: 1rem;
+    white-space: pre-line;
+  }
+  
+  pre {
+    background-color: #fff;
+    padding: 1rem;
+    border-left: 4px solid #f72585;
+    font-family: monospace;
+    color: #4b145b;
+  }
+  
+  footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: #ffe0f0;
+    font-size: 0.9rem;
+  }
+  
+  /* Mobile Responsive */
+  @media (max-width: 600px) {
+    input, button {
+      width: 100%;
+    }
+  }
+  

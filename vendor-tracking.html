@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Vendor Payment Tracking - Flora Finance</title>
+  <link rel="stylesheet" href="styles/vendor-tracking.css" />
+</head>
+<body>
+  <header>
+    <h1>🌸 Vendor Payment Tracking</h1>
+    <p class="subtitle">Stay organized & keep vendors happy!</p>
+  </header>
+
+  <main>
+    <section class="info">
+      <h2>Why Vendor Tracking Matters</h2>
+      <p>
+        In wedding planning, vendors make the magic happen. From florists to caterers,
+        each needs to be paid on time. Keeping track of what’s owed and what’s paid
+        helps avoid confusion and builds trust. A well-organized planner is every bride’s dream!
+      </p>
+    </section>
+
+    <section class="tracker">
+      <h2>Track Vendor Payments</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Vendor</th>
+            <th>Service</th>
+            <th>Total Amount</th>
+            <th>Paid</th>
+            <th>Due Date</th>
+            <th>Status</th>
+          </tr>
+        </thead>
+        <tbody id="vendor-table">
+          <tr>
+            <td>Elegant Florals</td>
+            <td>Flower Decor</td>
+            <td>R4,500</td>
+            <td>R2,500</td>
+            <td>2025-05-05</td>
+            <td><button onclick="markPaid(this)">Mark Paid</button></td>
+          </tr>
+        </tbody>
+      </table>
+      <p class="note">Click "Paid" once the full amount has been paid.</p>
+    </section>
+
+    <section class="form-section">
+      <h2>Add a New Vendor</h2>
+      <form id="vendorForm">
+        <input type="text" id="vendorName" placeholder="Vendor Name" required />
+        <input type="text" id="service" placeholder="Service Provided" required />
+        <input type="number" id="totalAmount" placeholder="Total Amount (e.g. 4500)" required />
+        <input type="number" id="amountPaid" placeholder="Amount Paid (e.g. 2500)" required />
+        <input type="date" id="dueDate" required />
+        <button type="submit">Add Vendor</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Flora Finance 🌷 Created for Poppie</p>
+  </footer>
+
+  <script src="scripts/vendor-tracking.js"></script>
+</body>
+</html>
